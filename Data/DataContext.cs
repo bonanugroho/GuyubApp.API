@@ -13,6 +13,7 @@ namespace GuyubApp.API.Data
         public DbSet<Rumah> Rumahs { get; set; }
         public DbSet<IuranWajib> IuranWajibs { get; set; }
         public DbSet<IuranNonWajib> IuranNonWajibs { get; set; }
+        public DbSet<Pengeluaran> Pengeluarans { get; set; }
         
     }
 }
