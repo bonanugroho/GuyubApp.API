@@ -11,6 +11,8 @@ namespace GuyubApp.API.Data
         public DbSet<RT> RTs { get; set; }
         public DbSet<Blok> Bloks { get; set; }
         public DbSet<Rumah> Rumahs { get; set; }
+        public DbSet<IuranWajib> IuranWajibs { get; set; }
+        public DbSet<IuranNonWajib> IuranNonWajibs { get; set; }
         
     }
 }
