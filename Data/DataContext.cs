@@ -14,6 +14,7 @@ namespace GuyubApp.API.Data
         public DbSet<IuranWajib> IuranWajibs { get; set; }
         public DbSet<IuranNonWajib> IuranNonWajibs { get; set; }
         public DbSet<Pengeluaran> Pengeluarans { get; set; }
+        public DbSet<User> Users { get; set; }
         
     }
 }
