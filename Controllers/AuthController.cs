@@ -68,7 +68,7 @@ namespace GuyubApp.API.Controllers
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddHours(1),
+                Expires = DateTime.Now.AddMinutes(1),
                 SigningCredentials = creds
             };
 
