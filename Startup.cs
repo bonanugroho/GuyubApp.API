@@ -69,6 +69,7 @@ namespace GuyubApp.API
             }
             else
             {
+                // Global exception handler
                 app.UseExceptionHandler(builder => {
                     builder.Run(async context => {
                         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
@@ -76,6 +77,7 @@ namespace GuyubApp.API
                         var error = context.Features.Get<IExceptionHandlerFeature>();
                         if (error != null)
                         {
+                            // Add custom exception header -> '/Helpers/Extensions.cs'
                             context.Response.AddApplicationError(error.Error.Message);
                             await context.Response.WriteAsync(error.Error.Message);
                         }
